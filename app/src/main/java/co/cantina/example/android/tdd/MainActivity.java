@@ -26,6 +26,8 @@ public class MainActivity extends Activity {
             getFragmentManager().beginTransaction()
                     .add(R.id.container, new PlaceholderFragment())
                     .commit();
+        } else {
+            exampleState = savedInstanceState.getString(EXAMPLE_STATE);
         }
     }
 
