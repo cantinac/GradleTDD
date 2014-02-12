@@ -1,0 +1,24 @@
+apply plugin: 'java'
+
+task hello << {
+    println project(':app').buildDir
+    println androidProjectClasses(project(':app'), 'debug').toString()
+}
+
+def androidSdk(androidProject) {
+    return files([androidProject.android.plugin.sdkDirectory, 'platforms',
+            androidProject.android.compileSdkVersion, 'android.jar'].join(File.separator))
+}
+
+def androidProjectClasses(androidProject, variant) {
+    return files([androidProject.buildDir, 'classes', variant].join(File.separator))
+}
+
+dependencies {
+    testCompile project(':app')
+    testCompile androidProjectClasses(project(':app'), 'debug')
+    testCompile 'junit:junit:4.11'
+    testCompile 'org.robolectric:robolectric:2.2'
+    testCompile 'org.mockito:mockito-all:1.9.5'
+    testCompile androidSdk(project(':app'))
+}
