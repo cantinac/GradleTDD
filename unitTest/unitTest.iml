@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$/.." external.system.id="GRADLE" external.system.module.group="BddExperiment" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+<module external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$/.." external.system.id="GRADLE" external.system.module.group="GradleTDD" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="android-gradle" name="Android-Gradle">
       <configuration>
@@ -19,7 +19,7 @@
       <excludeFolder url="file://$MODULE_DIR$/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="1.6" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="app" exported="" />
     <orderEntry type="library" exported="" scope="TEST" name="junit-4.11" level="project" />
@@ -64,7 +64,7 @@
     <orderEntry type="library" exported="" scope="TEST" name="wagon-http-shared-1.0-beta-6" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="wagon-http-lightweight-1.0-beta-6" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="maven-ant-tasks-2.1.3" level="project" />
-    <orderEntry type="library" exported="" scope="TEST" name="_Users_mfremont_Workbench_android_BddExperiment_app_build_classes_debug" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="_Users_mfremont_Workbench_android_GradleTDD_app_build_classes_debug" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="android" level="project" />
   </component>
 </module>
