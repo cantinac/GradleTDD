@@ -1,7 +1,6 @@
-package co.cantina.example.android.bdd;
+package co.cantina.example.android.tdd;
 
 import android.app.Activity;
-import android.app.ActionBar;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,9 +8,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.os.Build;
 
+/**
+ * A bare-bones activity for demonstrating unit testing with Robolectric.
+ */
 public class MainActivity extends Activity {
+    static final String EXAMPLE_STATE = "exampleState";
+
+    String exampleState;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
