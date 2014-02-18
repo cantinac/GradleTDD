@@ -12,7 +12,7 @@ test {
 
 dependencies {
     testCompile project(':app')
-    testCompile androidClassesDependency(project(':app'), 'debug')
+    testCompile androidProjectClassesDependency(project(':app'), 'debug')
     testCompile 'junit:junit:4.11'
     testCompile 'org.robolectric:robolectric:2.2'
     testCompile 'org.mockito:mockito-all:1.9.5'
@@ -45,7 +45,7 @@ def androidSdkDependency(androidProject) {
  *
  * <code>
  *     dependencies {
- *         testCompile androidClassesDependency(project(':app'), 'debug')
+ *         testCompile androidProjectClassesDependency(project(':app'), 'debug')
  *         // ...
  *     }
  * </code>
@@ -55,7 +55,7 @@ def androidSdkDependency(androidProject) {
  *
  * @return a FileCollection that references the build output directory for the Android project variant
  */
-def androidClassesDependency(androidProject, variant) {
+def androidProjectClassesDependency(androidProject, variant) {
     return files([androidProject.buildDir, 'classes', variant].join(File.separator))
 }
 
